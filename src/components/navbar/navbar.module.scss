@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 100px;
+  color: #333;
+  box-shadow: 0 2px 5px #428bca;
+}
+.name {
+  padding: 0px 30px;
+}
+.links {
+  display: flex;
+}
+.link {
+  color: #777;
+  display: flex;
+  text-decoration: none;
+  padding: 0px 10px;
+
+  &:hover {
+    cursor: pointer;
+    color: #333;
+  }
+}
+
+.activeLink {
+  composes: link;
+  color: #333;
+}
