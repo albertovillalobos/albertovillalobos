@@ -1,16 +1,42 @@
+@import "../../design-patterns/constants.scss";
+
 .container {
   display: flex;
   flex-direction: row;
   padding: 15px 100px;
   color: #333;
   box-shadow: 0 2px 5px #428bca;
+
+  @media(max-width: $breakpoint) {
+    flex-wrap: wrap;
+    padding: 15px 0px;
+    justify-content: space-between;
+  }
 }
 .name {
   padding: 0px 30px;
+
+  @media(max-width: $breakpoint) {
+    text-align: left;
+    width: 50%;
+    margin-left: 15px;
+    padding: 0;
+  }
+
 }
+
 .links {
   display: flex;
+
+  @media(max-width: $breakpoint) {
+    // border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    display: none;
+    width: 100%;
+    margin-bottom: -10px;
+  }
 }
+
 .link {
   color: #777;
   display: flex;
@@ -21,9 +47,31 @@
     cursor: pointer;
     color: #333;
   }
+
+  @media(max-width: $breakpoint) {
+    padding: 10px 15px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+.bars {
+  display: none;
+
+  @media(max-width: $breakpoint) {
+    display: block;
+    margin-right: 15px;
+  }
 }
 
 .activeLink {
   composes: link;
   color: #333;
+}
+
+
+.show {
+  display: none;
+  @media(max-width: $breakpoint) {
+    display: block;
+  }
 }

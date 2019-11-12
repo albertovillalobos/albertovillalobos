@@ -1,3 +1,5 @@
+@import "../../design-patterns/constants.scss";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -23,7 +25,6 @@
 
 .name {
   font-size: 56px;
-  line-height: 1.5rem;
   margin-bottom: 30px;
 }
 
@@ -61,9 +62,13 @@
 }
 
 .about {
-  width: 800px;
+  max-width: $breakpoint;
   text-align: left;
   margin: 100px 0;
+
+  @media(max-width: $breakpoint) {
+    padding: 0 20px;
+  }
 }
 
 .title {
@@ -79,20 +84,34 @@
 }
 
 .skillset {
-  width: 800px;
+  max-width: $breakpoint;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+
+  @media(max-width: $breakpoint) {
+    align-self: flex-start;
+    padding: 0 20px;
+  }
 }
 
 .skillColumns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media(max-width: $breakpoint) {
+    flex-direction: column;
+  }
 }
 
 .column {
   width: 20%;
+
+  @media(max-width: $breakpoint) {
+    width: 100%;
+  }
 }
 
 .skillTitle {

@@ -8,8 +8,6 @@ const Project = (project) => {
   const { id } = useParams();
   const { picture: src, info, name } = projects.find((p) => id === p.id)
 
-  debugger;
-
   return (
     <div className={container}>
       <img className={picture} src={src} alt={name} />

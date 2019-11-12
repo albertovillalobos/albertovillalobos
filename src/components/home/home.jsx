@@ -17,16 +17,16 @@ import styles, {
 } from './home.module.scss';
 
 const Social = ({ href, className, fa }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className={styles[className]}>
+  <a href={href} key={className} target="_blank" rel="noopener noreferrer" className={styles[className]}>
     <i className={fa} />
   </a>
 )
 
 const skillColumn = ({ name, skills}) => (
-  <div className={column}>
+  <div className={column} key={name}>
     <div className={skillTitle}>{name}</div>
     <ul className={skillList}>
-      {skills.map(s => <li>{s}</li> )}
+      {skills.map(s => <li key={s}>{s}</li> )}
     </ul>
   </div>
 )

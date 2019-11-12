@@ -1,20 +1,34 @@
+@import "../../design-patterns/constants.scss";
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+
+  @media(max-width: $breakpoint) {
+    width: 100%;
+  }
 }
 
 .picture {
   max-width: 750px;
   box-shadow: 0 5px 17px #000;
   margin-bottom: 50px;
+
+  @media(max-width: $breakpoint) {
+    max-width: 80%;
+  }
 }
 
 .description {
   max-width: 750px;
   text-align: left;
+
+  @media(max-width: $breakpoint) {
+    padding: 0 15px;
+  }
 
   img {
     width: 100%;
