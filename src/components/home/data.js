@@ -26,7 +26,7 @@ and doing startups.`;
 export const aboutMe2 = `I'm now a seasoned hacker, full-stack and mobile
 developer with years of experience in several languages. While my experise is
 in complete Full Stack development, the area I currently have the most fun is in
-Front-End Engineering, building complex apps with React, with Redux or GraphQL.`;
+Front-End Engineering, building complex apps in React, with Redux or GraphQL.`;
 
 
 // My area of expertise is
