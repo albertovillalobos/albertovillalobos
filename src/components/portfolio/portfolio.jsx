@@ -1,5 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { projects } from '../../data/data.js';
+import { container, project, pic } from './portfolio.module.scss';
 
-const Home = () => <div>Hi I'm portfolio</div>;
+const ProjectPicture = ({ thumbnail, name, id}) => (
+  <div className={project}>
+    <Link to={`/portfolio/${id}`}>
+      <img className={pic} src={thumbnail} alt={name} />
+    </Link>
+  </div>
+);
 
-export default Home
+const Portfolio = () => (
+  <div className={container}>
+    {projects.map(ProjectPicture)}
+  </div>
+);
+
+export default Portfolio;

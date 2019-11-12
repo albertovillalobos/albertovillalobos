@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './components/home';
 import Portfolio from './components/portfolio';
+import Project from './components/project';
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
         <div className={styles.app}>
           <Route exact path="/" component={Home} />
           <Route exact path="/portfolio" component={Portfolio} />
+          <Route path="/portfolio/:id" component={Project} />
         </div>
         <Footer />
       </div>
