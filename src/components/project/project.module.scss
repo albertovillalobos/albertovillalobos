@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.picture {
+  max-width: 750px;
+  box-shadow: 0 5px 17px #000;
+  margin-bottom: 50px;
+}
+
+.description {
+  max-width: 750px;
+  text-align: left;
+
+  img {
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 0 5px 17px #000;
+  }
+
+  a {
+    color: #428bca;
+  }
+}

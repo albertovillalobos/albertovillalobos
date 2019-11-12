@@ -21,13 +21,17 @@ hacking, and solving problems. I started this journey in my early teenage years
 to hack video-games, realizing that with coding I could hack, improve and create
 awesome stuff. My passion quickly evolved into creating software to help my
 parents' business and into pursuing a degree in CS in the US, winning Hackathons
-and doing startups.
-`;
+and doing startups.`;
 
 export const aboutMe2 = `I'm now a seasoned hacker, full-stack and mobile
-developer with years of experience in several languages. My area of expertise is
-MEAN full-stack development: from UI/UX to REST-full API back-end and a pioneer
-in Multi-tier MVC design pattern.`
+developer with years of experience in several languages. While my experise is
+in complete Full Stack development, the area I currently have the most fun is in
+Front-End Engineering, building complex apps with React, with Redux or GraphQL.`;
+
+
+// My area of expertise is
+// MEAN full-stack development: from UI/UX to REST-full API back-end and a pioneer
+// in Multi-tier MVC design pattern.
 
 export const particularSkills = [
   {
@@ -45,19 +49,18 @@ export const particularSkills = [
     ],
   },
   {
-    name: 'Frameworks & Libraries',
+    name: 'Favorites',
     skills: [
       'React',
-      'React-Native',
+      'Redux',
+      'GraphQL',
       'Flexbox',
       'Webpack',
+      'React-Native',
       'Rails',
       'NodeJS',
       'Express',
-      'Angular',
       'Mongoose',
-      'Bootstrap',
-      'JQuery',
     ],
   },
   {
