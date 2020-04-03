@@ -33,7 +33,7 @@ const skillColumn = ({ name, skills}) => (
 
 const Home = () => <div className={container}>
   <div className={presentation}>
-    <img alt="alberto's selfie" className={selfie} src="http://i.imgur.com/rpkkoRr.jpg" />
+    <img alt="alberto's selfie" className={selfie} src="https://i.imgur.com/rpkkoRr.jpg" />
     <div className={name}>Alberto Villalobos</div>
     <div className={links}>
       {socialData.map(Social)}
