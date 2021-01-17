@@ -1,20 +1,15 @@
 export const socialData = [
   {
-    href:"https://github.com/albertovillalobos",
+    href: 'https://github.com/albertovillalobos',
     className: 'github',
     fa: 'fa fa-github-alt',
   },
   {
-    href:"https://linkedin.com/in/villalobosalberto",
-    className: 'linkedin',
-    fa: 'fa fa-linkedin-square',
-  },
-  {
-    href:"mailto:alberto@albertovillalobos.me",
+    href: 'mailto:alberto@albertovillalobos.me',
     className: 'email',
     fa: 'fa fa-envelope-o',
   },
-]
+];
 
 export const aboutMe1 = `I'm a full-stack developer with a passion for coding,
 hacking, and solving problems. I started this journey in my early teenage years
@@ -27,7 +22,6 @@ export const aboutMe2 = `I'm now a seasoned hacker, full-stack and mobile
 developer with years of experience in several languages. While my experise is
 in complete Full Stack development, the area I currently have the most fun is in
 Front-End Engineering, building complex apps in React, with Redux or GraphQL.`;
-
 
 // My area of expertise is
 // MEAN full-stack development: from UI/UX to REST-full API back-end and a pioneer
@@ -45,7 +39,7 @@ export const particularSkills = [
       'HTML',
       'CSS',
       'Swift',
-      'Ruby'
+      'Ruby',
     ],
   },
   {
@@ -65,19 +59,10 @@ export const particularSkills = [
   },
   {
     name: 'Platforms',
-    skills: [
-      'Amazon AWS',
-      'Digital Ocean',
-      'FireBase',
-    ],
+    skills: ['Amazon AWS', 'Digital Ocean', 'FireBase'],
   },
   {
     name: 'Database',
-    skills: [
-      'MongoDB',
-      'MySQL',
-      'Microsoft SQL',
-    ],
+    skills: ['MongoDB', 'MySQL', 'Microsoft SQL'],
   },
-
-]
+];
